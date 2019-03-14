@@ -3,7 +3,19 @@
 > 文章为导航页面，记录一些编程开发中的一些相关知识，希望能与大家一起进步!
 
 
-# :mega: 数据结构与算法 #
+## :mega: 面试题 ##
+
+> JAVA相关面试题，祝各位找到好工作！
+
+| :notebook:JAVA基础面试题 | :notebook:数据库面试题 | :notebook:多线程面试题 | :notebook:微服务面试题 |:notebook:Spring面试题 |
+| :------:| :------: | :------: | :------: |:------: |
+| [JAVA基础面试题](src/other.md)| [数据库面试题](src/other.md) | [多线程面试题](src/other.md) | [微服务面试题](src/other.md) | [其他算法](src/other.md) | 
+
+| :notebook:SpringMVC面试题 | :notebook:SpringBoot面试题 |:notebook:SpringCloud面试题 |:notebook:Redis面试题 |:notebook:设计模式面试题 |
+| :------:| :------: | :------: | :------: |:------: |
+| [SpringMVC面试题](src/other.md)| [SpringBoot面试题](src/other.md) | [SpringCloud面试题](src/other.md) | [Redis面试题](src/other.md) | [设计模式面试题](src/other.md) | 
+
+## :mega: 数据结构与算法 ##
 
 > 搜索/排序/高级算法/大数据算法/其他算法文章。搞定数据结构与算法，逼格分分钟提升！
 
@@ -25,9 +37,13 @@
 
 > Java进阶，提升实力，提高自身竞争力！
 
-|:memo:设计模式 | :memo:Servlet+Tomcat  | :memo:JSP | :memo:XML和JSON | :memo:过滤器和拦截器 | :memo:AJAX | :memo:JAVA8新特性 | :memo:JAVA9新特性 | 
-| :------:| :------:| :------:| :------: | :------: |:------: |:------: |:------: |
-| [设计模式](src/other.md) | [Servlet+Tomcat](src/other.md) | [JSP](src/other.md) | [XML和JSON](src/other.md) | [过滤器和拦截器](src/other.md) | [AJAX](src/other.md) | [JAVA8新特性](src/other.md) | [JAVA9新特性](src/other.md) |
+|:memo:设计模式 | :memo:Servlet+Tomcat  | :memo:JSP | :memo:XML和JSON |
+| :------:| :------:| :------:| :------: | 
+| [设计模式](src/other.md) | [Servlet+Tomcat](src/other.md) | [JSP](src/other.md) | [XML和JSON](src/other.md) |
+
+| :memo:过滤器和拦截器 | :memo:AJAX | :memo:JAVA8新特性 | :memo:JAVA9新特性 | 
+|:------: |:------: |:------: |:------: |
+ |[过滤器和拦截器](src/other.md) | [AJAX](src/other.md) | [JAVA8新特性](src/other.md) | [JAVA9新特性](src/other.md) |
 
 
 
@@ -62,18 +78,26 @@
 
 > 企业级常用框架，轻松学会稳就业！
 
-| :jack_o_lantern:Hibernate | :jack_o_lantern:Struts2 | :jack_o_lantern:Spring | :jack_o_lantern:SpringMVC | :jack_o_lantern:SpringSecurity |:jack_o_lantern:Mybatis | :jack_o_lantern:SpringBoot |:jack_o_lantern:SpringCloud |
-| :------:| :------: | :------: |:------: |:------: |:------: |:------: |:------: |
-| [Hibernate](src/other.md) | [Struts2](src/other.md) | [Spring](src/other.md) |[SpringMVC](src/other.md) | [SpringSecurity](src/other.md) |[Mybatis](src/other.md) |[SpringBoot实战](src/other.md) | [SpringCloud实战](src/other.md) | 
+| :jack_o_lantern:Hibernate | :jack_o_lantern:Struts2 | :jack_o_lantern:Spring | :jack_o_lantern:SpringMVC |
+| :------:| :------: | :------: |:------: |
+| [Hibernate](src/other.md) | [Struts2](src/other.md) | [Spring](src/other.md) |[SpringMVC](src/other.md) | 
+
+ | :jack_o_lantern:SpringSecurity |:jack_o_lantern:Mybatis | :jack_o_lantern:SpringBoot |:jack_o_lantern:SpringCloud |
+ |:------: |:------: |:------: |:------: |
+|[SpringSecurity](src/other.md) |[Mybatis](src/other.md) |[SpringBoot实战](src/other.md) | [SpringCloud实战](src/other.md) | 
 
 
 ## :mega:系统架构 ##
 
 > 系统架构，学习中间件，扩展自身综合实力！
 
-| :tv:Config配置中心 | :tv:Apollo配置中心 | :tv:Rabbitmq消息队列 | :tv:Cat分布式消息监控 | :tv:XXL-分布式定时任务 |:tv:网关 | :tv:负载均衡 |:tv:API文档 |:tv:读写分离 |
-| :------:| :------: | :------: |:------: |:------: |:------: |:------: |:------: |:------: |
-| [Spring-Cloud-Config](src/other.md) | [携程Apollo配置中心](src/other.md) | [Rabbitmq消息队列](src/other.md) |[大众Cat分布式消息监控](src/other.md) | [XXL-分布式定时任务](src/other.md) |[Zuul/GateWay/Kong](src/other.md) |[Nginx/F5](src/other.md) | [Swagger/Yapi](src/other.md) | [MyCat](src/other.md) | 
+| :tv:Config配置中心 | :tv:Apollo配置中心 | :tv:Rabbitmq消息队列 | :tv:Cat分布式消息监控 | 
+| :------:| :------: | :------: |:------: |
+| [Spring-Cloud-Config](src/other.md) | [携程Apollo配置中心](src/other.md) | [Rabbitmq消息队列](src/other.md) |[大众Cat分布式消息监控](src/other.md)|
+
+|:tv:XXL-分布式定时任务 |:tv:网关 | :tv:负载均衡 |:tv:API文档 |:tv:读写分离 |
+|:------: |:------: |:------: |:------: |:------: |
+ | [XXL-分布式定时任务](src/other.md) |[Zuul/GateWay/Kong](src/other.md) |[Nginx/F5](src/other.md) | [Swagger/Yapi](src/other.md) | [MyCat](src/other.md) | 
 
 ## :mega: 微服务 与 DevOps ##
 
