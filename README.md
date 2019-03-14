@@ -79,9 +79,9 @@
 
 > DevOps，让开发更便捷，让流程更智能！
 
-| :microscope:GitLab | :microscope:接口测试 | :microscope:性能测试/稳定性测试 | 
-| :------:| :------: | :------: |
-| [GitLab](src/other.md) | [接口测试](src/other.md) | [性能测试/稳定性测试](src/other.md) |
+| :microscope:GitLab | 
+| :------:| 
+| [GitLab](src/other.md) |
 
 ## :mega: 测试##
 
