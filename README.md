@@ -26,8 +26,9 @@
 > Java进阶，提升实力，提高自身竞争力！
 
 |:memo:设计模式 | :memo:Servlet+Tomcat  | :memo:JSP | :memo:XML和JSON | :memo:过滤器和拦截器 | :memo:AJAX | :memo:JAVA8新特性 | :memo:JAVA9新特性 | 
-| :------:| :------:| :------:| :------: | :------: |:------: |
-| [设计模式](src/other.md) | [Servlet+Tomcat](src/other.md) | [JSP](src/other.md) | [XML和JSON](src/other.md) | [过滤器和拦截器](src/other.md) | [AJAX](src/other.md) |
+| :------:| :------:| :------:| :------: | :------: |:------: |:------: |:------: |
+| [设计模式](src/other.md) | [Servlet+Tomcat](src/other.md) | [JSP](src/other.md) | [XML和JSON](src/other.md) | [过滤器和拦截器](src/other.md) | [AJAX](src/other.md) | [JAVA8新特性](src/other.md) | [JAVA9新特性](src/other.md) |
+
 
 
 ## :coffee: Java成神 ##
