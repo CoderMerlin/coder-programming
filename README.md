@@ -9,11 +9,11 @@
 
 | :notebook:JAVA基础面试题 | :notebook:数据库面试题 | :notebook:多线程面试题 | :notebook:微服务面试题 |:notebook:Spring面试题 |
 | :------:| :------: | :------: | :------: |:------: |
-| [JAVA基础面试题](src/01-java-interview/other.md)| [数据库面试题](src/01-java-interview/other.md) | [多线程面试题](src/01-java-interview/other.md) | [微服务面试题](src/01-java-interview/other.md) | [其他算法](src/01-java-interview/other.md) | 
+| [JAVA基础面试题](src/01-java-interview/README.md)| [数据库面试题](src/01-java-interview/README.md) | [多线程面试题](src/01-java-interview/other.md) | [微服务面试题](src/01-java-interview/README.md) | [其他算法](src/01-java-interview/README.md) | 
 
 | :notebook:SpringMVC面试题 | :notebook:SpringBoot面试题 |:notebook:SpringCloud面试题 |:notebook:Redis面试题 |:notebook:设计模式面试题 |
 | :------:| :------: | :------: | :------: |:------: |
-| [SpringMVC面试题](src/01-java-interview/other.md)| [SpringBoot面试题](src/01-java-interview/other.md) | [SpringCloud面试题](src/01-java-interview/other.md) | [Redis面试题](src/01-java-interview/other.md) | [设计模式面试题](src/01-java-interview/other.md) | 
+| [SpringMVC面试题](src/01-java-interview/README.md)| [SpringBoot面试题](src/01-java-interview/README.md) | [SpringCloud面试题](src/01-java-interview/README.md) | [Redis面试题](src/01-java-interview/README.md) | [设计模式面试题](src/01-java-interview/README.md) | 
 
 ## :mega: 2.数据结构与算法 ##
 
