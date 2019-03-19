@@ -3,10 +3,13 @@
 
 集合类面试题
 
-- [什么是集合？](01Collection.md)
-- [JAVA中集合类型都有哪些？各有什么特点？](01Collection.md)
-- [说一说集合的父类Collection？](01Collection.md)
-- [可以简单介绍下集合中几种重要的类和接口？](01Collection.md)
-- [数组和集合都有哪些区别？](01Collection.md)
+涉及的Collection集合相关面试题
+- [1.什么是集合？](01Collection.md)
+- [2.JAVA中集合类型都有哪些？各有什么特点？](01Collection.md)
+- [3.说一说集合的父类Collection？](01Collection.md)
+- [4.数组和集合都有哪些区别？](01Collection.md) 
+- [5.说一说迭代器Iterator？](01Collection.md)
+- [6.Collection接口中几种重要的类和接口简介？](01Collection.md)
+
 
 多线程面试题

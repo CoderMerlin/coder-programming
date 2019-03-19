@@ -1,4 +1,21 @@
-## 1.什么是集合？
+## 前言
+> 欢迎关注微信公众号：*Coder编程*
+> 获取最新原创技术文章和相关免费学习资料，随时随地学习技术知识！
+
+本章主要介绍Collection集合相关知识，结合面试中会提到的相关问题进行知识点的梳理。希望能帮到大家~
+
+**基于JDK1.8，如有错误，还望大家能够指出！**
+
+涉及的Collection集合相关面试题
+- [1.什么是集合？](#1.什么是集合？)
+- [2.JAVA中集合类型都有哪些？各有什么特点？](#2.JAVA中集合类型都有哪些？各有什么特点？)
+- [3.说一说集合的父类Collection？](#3.说一说集合的父类Collection？)
+- [4.数组和集合都有哪些区别？](#4.数组和集合都有哪些区别？) 
+- [5.说一说迭代器Iterator？](#5.说一说迭代器Iterator？)
+- [6.Collection接口中几种重要的类和接口简介？](#6.Collection接口中几种重要的类和接口简介？)
+
+
+### 1.什么是集合？
 
 **来自百度百科的回答：**
     集合类存放于java.util包中。
@@ -8,24 +25,30 @@
 
 
 
-## 2.JAVA中集合类型都有哪些？各有什么特点？
+### 2.JAVA中集合类型都有哪些？各有什么特点？
 
-集合类型主要有3种：set(集）、list(列表）和map(映射)。
-1、List（有序、可重复）
+Collection两大体系：链表List、集合Set
+List特点：元素有序；元素可以重复；元素都有索引（角标）
+
 List里存放的对象是有序的，同时也是可以重复的，List关注的是索引，拥有一系列和索引相关的方法，查询速度快。
 因为往list集合里插入或删除数据时，会伴随着后面数据的移动，所有插入删除数据速度慢。
 
-2、Set（无序、不能重复）
+Set特点：元素无序；元素不可以重复；
+
 Set里存放的对象是无序，不能重复的，集合中的对象不按特定的方式排序，只是简单地把对象加入集合中。
 
-3、Map（键值对、键唯一、值不唯一）
+同时集合中还有另外一种类型：Map(映射)。
+
+Map特点：键值对；键不可以重复；值可以重复；
+
 Map集合中存储的是键值对，键不能重复，值可以重复。根据键得到值，对map集合遍历时先得到键的set集合，对set集合进行遍历，得到相应的值。
 
 
 
-### 3.快速了解集合的父类Collection
+### 3.说一说集合的父类Collection？
 
-3.1 Collection 体系结构图
+#### 3.1 Collection 体系结构图
+
 Collection
 ├List （有序集合，允许相同元素和null）
 │├LinkedList （非同步，允许相同元素和null，遍历效率低插入和删除效率高）
@@ -34,147 +57,117 @@ Collection
 │　└Stack（继承自Vector，实现一个后进先出的堆栈）
 └Set （无序集合，不允许相同元素，最多有一个null元素）
      |-HashSet(无序集合，不允许相同元素，最多有一个null元素)
+
 Map （没有实现collection接口，key不能重复，value可以重复，一个key映射一个value）
 ├Hashtable （实现Map接口，同步，不允许null作为key和value，用自定义的类当作key的话要复写hashCode和eques方法，）
 ├HashMap （实现Map接口，非同步，允许null作为key和value，用的多）
 └WeakHashMap（实现Map接口）
 
-3.2 Collection 中的主要方法
+#### 3.2 Collection 中的主要方法
 
-boolean add(Object o)添加对象到集合
-boolean remove(Object o)删除指定的对象
-int size()返回当前集合中元素的数量
-boolean contains(Object o)查找集合中是否有指定的对象
-boolean isEmpty()判断集合是否为空
-Iterator iterator()返回一个迭代器
-boolean containsAll(Collection c)查找集合中是否有集合c中的元素
-boolean addAll(Collection c)将集合c中所有的元素添加给该集合
-void clear()删除集合中所有元素
-void removeAll(Collection c)从集合中删除c集合中也有的元素
-void retainAll(Collection c)从集合中删除集合c中不包含的元素
+（1）添加
+boolean add(E o);
+boolean add(Collection<? extends E> c);
 
-还有一些操作整个集合的方法，比如 :
-boolean containsAll(Collection<?> c) 
-是否包含指定集合 c 的全部元素
-boolean addAll(Collection<? extends E> c) 
-添加集合 c 中所有的元素到本集合中，如果集合有改变就返回 true
-boolean removeAll(Collection<?> c) 
-删除本集合中和 c 集合中一致的元素，如果集合有改变就返回 true
-boolean retainAll(Collection<?> c) 
-保留本集合中 c 集合中两者共有的，如果集合有改变就返回 true
-void clear() 
-删除所有元素
-还有对数组操作的方法：
-Object[] toArray() 
-返回一个包含集合中所有元素的数组
-<T> T[] toArray(T[] a) 
-返回一个包含集合中所有元素的数组，运行时根据集合元素的类型指定数组的类型
+（2）删除
+boolean remove(Object o);
+boolean removeAll(Collection<? extends E> c)
+void clear()；
+
+（3）判断  
+a.判断集合中是否有元素：boolean isEmpty();
+b.判断集合中是否包含某个元素：boolean contains(Object o);
+c.判断集合中是否包含某些元素：boolean contains(Collection<?> c);
+        
+（4）获取
+a.获取集合中元素个数：int size();
+b.遍历集合中所有元素：Iterator<E> iterator();
+c.判断两个集合中是否存在相同的元素并保留两个集合中相同的元素删除不同的元素：boolean retainAll(Collection<?> c);
+
+（5）其他
+将集合中元素转为数组: 
+
+a.    Ojbect[] toArray();
+b.    <T>  T[] toArray();   泛型
+Java8新增方法：
 在 JDK 8 以后，Collection 接口还提供了从集合获取连续的或者并行流：
 Stream<E> stream()
 Stream<E> parallelStream()
 于Collection接口相关还有一个抽象类AbstractCollection：
 AbstractCollection是一个抽象类，实现了Collection接口的部分功能，实现了一些最基本的通用操作，把复杂的和业务相关的延迟到子类实现。
 在AbstractCollection中，主要实现了contains(), isEmpty(), toArray(), remove(), clear() 这几个操作。有兴趣的同学可以自行研究下，逻辑都比较简单。
+特别注意：List接口扩展了一个一些方法，其中最重要，也是用的最多的是：
+E get(int index) 返回指定索引的元素
 
 
-3.3 Collection子类主要实现接口
-Collection是最基本的集合接口，一个Collection代表一组Object，即Collection的元素（Elements）。一些Collection允许相同的元素而另一些不行。
-一些能排序而另一些不行。Java SDK不提供直接继承自Collection的类，Java SDK提供的类都是继承自Collection的“子接口”如List和Set。 
-所有实现Collection接口的类都必须提供两个标准的构造函数：无参数的构造函数用于创建一个空的Collection，有一个Collection参数的构造函数用于
-创建一个新的Collection，这个新的Collection与传入的Collection有相同的元素。后一个构造函数允许用户复制一个Collection。 
-如何遍历Collection中的每一个元素？不论Collection的实际类型如何，它都支持一个iterator()的方法，该方法返回一个迭代子，使用该迭代子即可逐一访问
-Collection中每一个元素。典型的用法如下： 
-　　　　
-```
-Iterator it = collection.iterator(); // 获得一个迭代子 
-　　　　while(it.hasNext()) { 
-　　　　　　Object obj = it.next(); // 得到下一个元素 
-　　　　} 
-```
+### 4.数组和集合都有哪些区别？
 
+**数组特点：**
 
-　　由Collection接口派生的两个接口是List和Set。 
-
-
-4.数组和集合都有哪些区别？
-
-数组特点：
 1.数组本质上就是一段连续的内存空间，用于记录多个类型相同的数据；
-
 2.数据一旦声明完毕，则内存空间固定不变；
-
 3.插入和删除操作不方便，可能会移动大量的元素并导致效率太低；
-
 4.支持下标访问，可以实现随机访问；
-
 5.数组中的元素可以是基本数据类型，也可以使用引用数据类型。
 
-集合特点：
+**集合特点：**
 
 1.内存空间可以不连续，数据类型可以不相同；
-
 2.集合的内存空间可以动态的调整；
-
 3.集合的插入删除操作可以不移动大量元素；
-
 4.部分支持下标访问，部分不支持；
-
 5.集合中的元素必须是引用数据类型(你存储的是简单的int，它会自动装箱成Integer)；
 
 可以看出数组和集合在数据的存储，访问，类型，长度等都有不同的地方。
 
 
-5.集合中几种重要的类和接口简介
-Collection接口 
-List接口 
-　　List是有序的Collection，使用此接口能够精确的控制每个元素插入的位置。用户能够使用索引（元素在List中的位置，类似于数组下标）来访问List中的元素，这类似于Java的数组。 
-和下面要提到的Set不同，List允许有相同的元素。 
-　　除了具有Collection接口必备的iterator()方法外，List还提供一个listIterator()方法，返回一个ListIterator接口，和标准的Iterator接口相比，ListIterator多了一些add()之类的方法，允许添加，删除，设定元素，还能向前或向后遍历。 
-　　实现List接口的常用类有LinkedList，ArrayList，Vector和Stack。 
-LinkedList类 
-　　LinkedList实现了List接口，允许null元素。此外LinkedList提供额外的get，remove，insert方法在LinkedList的首部或尾部。这些操作使LinkedList可被用作堆栈（stack），队列（queue）或双向队列（deque）。 
-　　注意LinkedList没有同步方法。如果多个线程同时访问一个List，则必须自己实现访问同步。一种解决方法是在创建List时构造一个同步的List： 
-　　　　List list = Collections.synchronizedList(new LinkedList(...)); 
+### 5.说一说迭代器 Iterator？
+ （1）通过集合对象获取其对应的Iterator对象
+ （2）判断是否存在下一个元素
+ （3）取出该元素并将迭代器对象指向下一个元素
 
-ArrayList类 
-　　ArrayList实现了可变大小的数组。它允许所有元素，包括null。ArrayList没有同步。 
-size，isEmpty，get，set方法运行时间为常数。但是add方法开销为分摊的常数，添加n个元素需要O(n)的时间。其他的方法运行时间为线性。 
-　　每个ArrayList实例都有一个容量（Capacity），即用于存储元素的数组的大小。这个容量可随着不断添加新元素而自动增加，但是增长算法并没有定义。当需要插入大量元素时，在插入前可以调用ensureCapacity方法来增加ArrayList的容量以提高插入效率。 
-　　和LinkedList一样，ArrayList也是非同步的（unsynchronized）。 
+ Iterator iterator():取出元素的方式：迭代器。
+     该对象必须依赖于具体容器，因为每一个容器的数据结构都不同。
+     所以该迭代器对象是在容器中进行内部实现的。
+     对于使用容器者而言，具体的实现不重要，只要通过容器获取到该实现的迭代器的对象即可，也就是iterator方法。
+**扩展知识：**
+ArrayList里面的iterator方法采用了设计模式中的——工厂方法模式！
+有兴趣的同学可以后续看到我另外的文章“设计模式精讲”专栏。
 
-Vector类 
-　　Vector非常类似ArrayList，但是Vector是同步的。由Vector创建的Iterator，虽然和ArrayList创建的Iterator是同一接口，但是，因为Vector是同步的，当一个Iterator被创建而且正在被使用，另一个线程改变了Vector的状态（例如，添加或删除了一些元素），这时调用Iterator的方法时将抛出ConcurrentModificationException，因此必须捕获该异常。 
+### 6.Collection接口中几种重要的类和接口简介？
+该问题与第二个问题类似~ 后续文章会有更详细的介绍！
+Collection两大体系：链表List、集合Set 另映射Map
 
-Stack 类 
-　　Stack继承自Vector，实现一个后进先出的堆栈。Stack提供5个额外的方法使得Vector得以被当作堆栈使用。基本的push和pop方法，还有peek方法得到栈顶的元素，empty方法测试堆栈是否为空，search方法检测一个元素在堆栈中的位置。Stack刚创建后是空栈。 
+List接口及子类介绍
+　　List是有序的Collection，使用此接口能够精确的控制每个元素插入的位置。用户能够使用索引（元素在List中的位置，类似于数组下标）来访问List中的元素，
+这类似于Java的数组。 和下面要提到的Set不同，List允许有相同的元素。 除了具有Collection接口必备的iterator()方法外，List还提供一个listIterator()方法，返回一个ListIterator接口，和标准的Iterator接口相比，
+ListIterator多了一些add()之类的方法，允许添加，删除，设定元素，还能向前或向后遍历。 
+　　实现List接口的常用类有：
+- LinkedList类  （底层数据结构是链表，线程不安全）
+- ArrayList类 （底层数据结构是数组，线程不安全）
+- Vector类 　（底层数据结构是数组，线程安全）
+- Stack类   （顾名思义：栈，继承至Vector类并进行扩展）
+在后续的文章中我们将一一详细介绍这些类的相关特性！
 
-Set接口 
-　　Set是一种不包含重复的元素的Collection，即任意的两个元素e1和e2都有e1.equals(e2)=false，Set最多有一个null元素。 
-　　很明显，Set的构造函数有一个约束条件，传入的Collection参数不能包含重复的元素。 
-　　请注意：必须小心操作可变对象（Mutable Object）。如果一个Set中的可变元素改变了自身状态导致Object.equals(Object)=true将导致一些问题。 
+Set接口及子类介绍
+Set是一种不包含重复的元素的Collection，即任意的两个元素e1和e2都有e1.equals(e2)=false，Set最多有一个null元素。很明显，Set的构造函数有一个约束条件，传入的Collection参数不能包含重复的元素。 　　
+注意：必须小心操作可变对象（Mutable Object）。如果一个Set中的可变元素改变了自身状态导致Object.equals(Object)=true将导致一些问题。
+实现Set接口的常用类有：
+- HashSet类 （底层数据结构是数组+单链表+红黑树，无序）
+- LinkedHashSet （底层数据结构是数组+单链表+红黑树+双向链表，无序）
+- TreeSet类 （底层数据结构红黑树，有序）
+在后续的文章中我们将一一详细介绍这些类的相关特性！
 
-Map接口 
-　　请注意，Map没有继承Collection接口，Map提供key到value的映射。一个Map中不能包含相同的key，每个key只能映射一个value。Map接口提供3种集合的视图，Map的内容可以被当作一组key集合，一组value集合，或者一组key-value映射。 
+Map接口及子类介绍　　
+注意：Map没有继承Collection接口，Map提供key到value的映射。一个Map中不能包含相同的key，每个key只能映射一个value。
+Map接口提供3种集合的视图，Map的内容可以被当作一组key集合，一组value集合，或者一组key-value映射。
+- Hashtable类 
+- HashMap类 　　
+在后续的文章中我们将一一详细介绍这些类的相关特性！
 
-Hashtable类 
-　　Hashtable继承Map接口，实现一个key-value映射的哈希表。任何非空（non-null）的对象都可作为key或者value。 
-　　添加数据使用put(key, value)，取出数据使用get(key)，这两个基本操作的时间开销为常数。 
-Hashtable通过initial capacity和load factor两个参数调整性能。通常缺省的load factor 0.75较好地实现了时间和空间的均衡。增大load factor可以节省空间但相应的查找时间将增大，这会影响像get和put这样的操作。 
-使用Hashtable的简单示例如下，将1，2，3放到Hashtable中，他们的key分别是”one”，”two”，”three”： 
-　　　　Hashtable numbers = new Hashtable(); 
-　　　　numbers.put(“one”, new Integer(1)); 
-　　　　numbers.put(“two”, new Integer(2)); 
-　　　　numbers.put(“three”, new Integer(3)); 
-　　要取出一个数，比如2，用相应的key： 
-　　　　Integer n = (Integer)numbers.get(“two”); 
-　　　　System.out.println(“two = ” + n); 
-　　由于作为key的对象将通过计算其散列函数来确定与之对应的value的位置，因此任何作为key的对象都必须实现hashCode和equals方法。hashCode和equals方法继承自根类Object，如果你用自定义的类当作key的话，要相当小心，按照散列函数的定义，如果两个对象相同，即obj1.equals(obj2)=true，则它们的hashCode必须相同，但如果两个对象不同，则它们的hashCode不一定不同，如果两个不同对象的hashCode相同，这种现象称为冲突，冲突会导致操作哈希表的时间开销增大，所以尽量定义好的hashCode()方法，能加快哈希表的操作。 
-　　如果相同的对象有不同的hashCode，对哈希表的操作会出现意想不到的结果（期待的get方法返回null），要避免这种问题，只需要牢记一条：要同时复写equals方法和hashCode方法，而不要只写其中一个。 
-　　Hashtable是同步的。 
+## 文末
+本章节介绍了Collection接口中的大部分可能在面试过程中会出现的内容，
+并没有详细去介绍其子类及其实现相关的原理。这方面的内容会放在后续的章节中去详细介绍。
 
-HashMap类 
-　　HashMap和Hashtable类似，不同之处在于HashMap是非同步的，并且允许null，即null value和null key。，但是将HashMap视为Collection时（values()方法可返回Collection），其迭代子操作时间开销和HashMap的容量成比例。因此，如果迭代操作的性能相当重要的话，不要将HashMap的初始化容量设得过高，或者load factor过低。 
-
-WeakHashMap类 
-　　WeakHashMap是一种改进的HashMap，它对key实行“弱引用”，如果一个key不再被外部所引用，那么该key可以被GC回收。 
- 
+> 欢迎关注微信公众号：*Coder编程*
+> 获取最新原创技术文章和相关免费学习资料，随时随地学习技术知识！

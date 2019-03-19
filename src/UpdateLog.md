@@ -3,3 +3,7 @@
 > 2019.3.15 
 
 初始化项目工程
+
+> 2019.3.19
+
+[带你了解Collection相关知识！](03-java-base/01Collection.md)
