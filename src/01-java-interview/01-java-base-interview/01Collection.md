@@ -49,6 +49,8 @@ Map集合中存储的是键值对，键不能重复，值可以重复。根据�
 
 #### 3.1 Collection 体系结构图
 
+![image](https://github.com/CoderMerlin/coder-programming/tree/master/src/01-java-interview/01-java-base-interview/images/01Collection.jpg)
+
 Collection
 ├List （有序集合，允许相同元素和null）
 │├LinkedList （非同步，允许相同元素和null，遍历效率低插入和删除效率高）
