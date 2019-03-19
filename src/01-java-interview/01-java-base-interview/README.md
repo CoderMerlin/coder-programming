@@ -12,4 +12,3 @@
 - [6.Collection接口中几种重要的类和接口简介？](01Collection.md)
 
 
-多线程面试题
