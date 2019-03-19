@@ -49,8 +49,7 @@ Map集合中存储的是键值对，键不能重复，值可以重复。根据�
 
 #### 3.1 Collection 体系结构图
 
-![](![](https://github.com/CoderMerlin/coder-programming/blob/master/src/01-java-interview/01-java-base-interview/images/01Collection.jpg?raw=true)
-)
+![](https://github.com/CoderMerlin/coder-programming/blob/master/src/01-java-interview/01-java-base-interview/images/01Collection.jpg?raw=true)
 
 Collection
 ├List （有序集合，允许相同元素和null）
