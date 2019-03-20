@@ -10,5 +10,12 @@
 - [4.数组和集合都有哪些区别？](01Collection.md) 
 - [5.说一说迭代器Iterator？](01Collection.md)
 - [6.Collection接口中几种重要的类和接口简介？](01Collection.md)
+---
+涉及的List接口及其子类相关面试题
+- []
 
+---
+涉及的Set接口及其子类相关面试题
 
+---
+涉及的Map接口及其子类相关面试题

@@ -6,4 +6,4 @@
 
 > 2019.3.19
 
-[带你了解Collection相关知识！](03-java-base/01Collection.md)
+[带你了解Collection相关知识！](03-java-base/Collection.md)
