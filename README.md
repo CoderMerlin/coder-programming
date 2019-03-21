@@ -9,7 +9,7 @@
 
 | :notebook:JAVA基础面试题 | :notebook:数据库面试题 | :notebook:多线程面试题 | :notebook:微服务面试题 |:notebook:Spring面试题 |
 | :------:| :------: | :------: | :------: |:------: |
-| [JAVA基础面试题](src/01-java-interview/README.md)| [数据库面试题](src/01-java-interview/README.md) | [多线程面试题](src/01-java-interview/other.md) | [微服务面试题](src/01-java-interview/README.md) | [其他算法](src/01-java-interview/README.md) | 
+| [JAVA基础面试题](src/01-java-interview/README.md)| [数据库面试题](src/01-java-interview/README.md) | [多线程面试题](src/01-java-interview/README.md) | [微服务面试题](src/01-java-interview/README.md) | [其他算法](src/01-java-interview/README.md) | 
 
 | :notebook:SpringMVC面试题 | :notebook:SpringBoot面试题 |:notebook:SpringCloud面试题 |:notebook:Redis面试题 |:notebook:设计模式面试题 |
 | :------:| :------: | :------: | :------: |:------: |
@@ -30,7 +30,7 @@
 
 | :book:环境搭建 | :book:开发工具 | :book:面向对象编程 | :book:Java集合 | :book:Java多线程 | :book: IO流| :book:其他基础知识 |
 | :------:| :------:| :------:| :------: | :------: |:------: | :------: |
-| [基础环境](src/03-java-base/other.md) | [Eclipse/IDEA](src/03-java-base/other.md) | [面向对象编程](src/03-java-base/other.md) | [Java集合](src/03-java-base/other.md) | [Java多线程](src/03-java-base/other.md) | [IO流](src/03-java-base/other.md) |[其他基础知识](src/03-java-base/other.md) |
+| [基础环境](src/03-java-base/README.md) | [Eclipse/IDEA](src/03-java-base/README.md) | [面向对象编程](src/03-java-base/README.md) | [Java集合](src/03-java-base/README.md) | [Java多线程](src/03-java-base/other.md) | [IO流](src/03-java-base/other.md) |[其他基础知识](src/03-java-base/other.md) |
 
 
 ## :coffee: 4.Java进阶 ##
