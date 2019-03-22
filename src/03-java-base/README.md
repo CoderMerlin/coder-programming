@@ -9,3 +9,10 @@
 ### 线程类知识点 ### 
 
 [一篇让你理解进程与线程的区别与联系](ProcessAndThread.md)
+
+
+### String知识点 ### 
+
+[通过面试题，让我们细聊String的那些知识点(上)](ProcessAndThread.md)
+[通过面试题，让我们细聊String的那些知识点(中)](ProcessAndThread.md)
+[通过面试题，让我们细聊String的那些知识点(下)](ProcessAndThread.md)

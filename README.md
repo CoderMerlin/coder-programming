@@ -1,6 +1,16 @@
 # :loudspeaker: Coder-Programming(Coder编程)介绍 #
 
 > 文章为导航页面，记录一些编程开发中的一些相关知识，希望能与大家一起进步!
+## :mega: 我的相关文章会发表在以下博客或论坛 ##
+
+[微信公众号](https://juejin.im/user/5c8863a9e51d45346459983c/posts)
+[掘金](https://juejin.im/user/5c8863a9e51d45346459983c/posts)
+[简书](https://www.jianshu.com/u/4314597216ea)
+[知乎](https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64)
+[博客园](https://www.cnblogs.com/coder-programming/)
+[开源中国](https://my.oschina.net/u/4096176)
+[今日头条](https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050)
+[SegmentFault](https://segmentfault.com/u/520coder)
 
 
 ## :mega: 1.面试题 ##
