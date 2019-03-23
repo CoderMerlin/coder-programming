@@ -12,9 +12,7 @@
 [今日头条](https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050)
 [SegmentFault](https://segmentfault.com/u/520coder)
 
-
-![微信公众号](https://upload-images.jianshu.io/upload_images/7326374-4818379d739aa75f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+![公众号](https://oscimg.oschina.net/oscnet/12fe7873f956cdb992a3df19db0c84bf6f7.jpg)
 
 ## :mega: 1.面试题 ##
 
