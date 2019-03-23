@@ -3,7 +3,7 @@
 > 文章为导航页面，记录一些编程开发中的一些相关知识，希望能与大家一起进步!
 ## :mega: 我的相关文章会发表在以下博客或论坛 ##
 
-[微信公众号](https://juejin.im/user/5c8863a9e51d45346459983c/posts)
+[微信公众号](https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=1&sn=ebb440a8309fc0de1126b4a2323549ee)
 [掘金](https://juejin.im/user/5c8863a9e51d45346459983c/posts)
 [简书](https://www.jianshu.com/u/4314597216ea)
 [知乎](https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64)
@@ -11,6 +11,9 @@
 [开源中国](https://my.oschina.net/u/4096176)
 [今日头条](https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050)
 [SegmentFault](https://segmentfault.com/u/520coder)
+
+
+![微信公众号](https://upload-images.jianshu.io/upload_images/7326374-4818379d739aa75f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ## :mega: 1.面试题 ##
