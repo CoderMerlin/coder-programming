@@ -108,9 +108,14 @@
 
 ## 饿了么面试题 
 
-- http和https的区别，https原理，http2.0与1.0的区别？
-- Java的垃圾回收机制，Java文件加载机制，tomcat类加载机制，锁机制，jvm原理及线上调优，jvm内存模型？
-- 多线程，有哪些可以保持进程同步的方法，创建线程的几种方法，对i++多线程访问你会怎么做？
+- jvm，jre以及jdk三者之间的关系？
+- Dubbo的底层原理，Zookeeper是什么
+- cincurrentMap的机制；TreeMap；Volatil关键字
+- 快速排序；广度优先搜索（队列实现
+- 缓存的雪崩以及穿透的理解？
+- HashMap的key可以重复吗？
+- synchronized和lock的区别？
+- 开发一个大型网站你会考虑哪些问题？
 - Java的设计模式，单例有什么模式，懒汉为什么加volotile，volotile的内存屏障，如何避免死锁？
 - 考虑单例模式的编写，要线程安全且内存消耗小？
 - String、StringBuilder、StringBuffer区别；String类能被继承吗？为什么？
