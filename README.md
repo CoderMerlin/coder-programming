@@ -73,7 +73,7 @@
 
 | :fish_cake:关系型数据库(MySQL/Oracle) | :fish_cake:非关系型数据库(Redis) | 
 | :------:| :------: | 
-| [关系型数据库(MySQL/Oracle)](src/other.md) | [Redis从入门到实战](src/other.md) | 
+| [关系型数据库(MySQL/Oracle)](src/06-data-base/README.md) | [Redis从入门到实战](src/other.md) | 
 
 
 ## :mega: 7.前端技术##
