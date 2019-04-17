@@ -1,7 +1,9 @@
+
+![悲观锁与乐观锁](https://user-gold-cdn.xitu.io/2019/4/16/16a26835c73ea038?w=900&h=383&f=png&s=178029)
 ## 前言
 在上一个章节[5分钟带你读懂事务隔离性与隔离级别 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483728&idx=1&sn=cdc5dc4708e48051e56b8e7d2a9fe5a8&chksm=96e67043a191f955b93e7228b88572beb486e6fac3308a1b69f5ee83c9e9ced6957e30b12d58&token=1787261466&lang=zh_CN#rd)的最后，其实我们已经提到了锁的概念。本章节接下来将主要介绍以下数据库`悲观锁与乐观锁`的相关知识。如有错误还请大家及时指出~ 
 
->本文已同步至 [GitHub](https://github.com/CoderMerlin/coder-programming)/[Gitee](https://gitee.com/573059382/coder-programming)/微信公众号，感兴趣的同学帮忙点波关注~
+>本文已同步至 [GitHub](https://github.com/CoderMerlin/coder-programming)/[Gitee](https://gitee.com/573059382/coder-programming)/公众号，感兴趣的同学帮忙点波关注~
 
 问题：
 
@@ -10,7 +12,6 @@
 - 什么是乐观锁？
 - 悲观锁与乐观锁区别与联系？
 - 悲观锁与乐观锁的使用场景？
-- 如何理解行锁与表锁？
 
 
 ## 为什么需要锁？
@@ -203,16 +204,18 @@ REPEATABLE-READ
 获取最新原创技术文章和相关免费学习资料，随时随地学习技术知识！
 
 参考文章：
+
 https://chenzhou123520.iteye.com/blog/1860954
+
 https://chenzhou123520.iteye.com/blog/1863407
 
 
-![微信公众号](https://img-blog.csdnimg.cn/20190407231851378.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pY2hhZWxfSE0=,size_16,color_FFFFFF,t_70)
+![微信公众号](https://user-gold-cdn.xitu.io/2019/4/16/16a26835c75c12fc?w=300&h=390&f=png&s=18217)
 
 ## 推荐阅读
 
 [带你了解数据库中JOIN的用法 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483713&idx=1&sn=d61ad0aed42dc36d64d17732db352288&chksm=96e67052a191f9445bbe3d5825ce547ad3171c3874b571a93b97977d0668413e37a164c3e0bc&token=1144933717&lang=zh_CN#rd)
 
-[ 带你了解数据库中group by的用法 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483717&idx=1&sn=157a8a021c29043a10480d0294b39ca0&chksm=96e67056a191f940668812ebb092fe9984b22eb619a18339cc052e1051c659a7e9d907c48814&token=1144933717&lang=zh_CN#rd)
+[ 带你了解数据库中事务的ACID特性 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483722&idx=1&sn=e8bc8bd82c559e0cfe7f35cf46100af3&chksm=96e67059a191f94fe8948e5b5e4ef177b77fa7707d86d945b153f67e7f2e76b83ed0c768ef27&token=128531458&lang=zh_CN#rd)
 
-[一篇带你读懂TCP之“滑动窗口”协议 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483706&idx=1&sn=8eed9d160013bd8ed6203ad511711553&chksm=96e67029a191f93fdd1543af2bf06025397d9c3bd0f0692c7fe247ab9c139cd869d69ab05498&token=1104592742&lang=zh_CN#rd)
+[5分钟带你读懂事务隔离性与隔离级别 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483728&idx=1&sn=cdc5dc4708e48051e56b8e7d2a9fe5a8&chksm=96e67043a191f955b93e7228b88572beb486e6fac3308a1b69f5ee83c9e9ced6957e30b12d58&token=1787261466&lang=zh_CN#rd)
