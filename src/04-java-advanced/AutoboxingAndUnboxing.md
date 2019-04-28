@@ -137,13 +137,13 @@ System.out.print(c--);//进行计算时隐含的有自动拆箱
 
 可以看出，其定义了Integer的最大值为2^31-1，最小值为-2^31。Integer的基本数据类型为int。
 
-![源码图]()
+![Integer大小]()
 
 ### 4.2 Integer中的valueOf()方法
 
 再来看看Integer中的valueOf()方法。
 
-![源码图]()
+![Integer中的valueOf()]()
 
 可以看出valueOf()方法是个静态方法。当传进来的变量值在一个区间之内，直接用IntegerCache.cache[]数组里面的数返回，否则new一个新对象。
 
@@ -153,71 +153,90 @@ System.out.print(c--);//进行计算时隐含的有自动拆箱
 
 接着来说下Integer这儿的一个坑，也是比较有意思的地方。
 
-https://blog.csdn.net/JavaZWT/article/details/81587333
 
-![源码图]()
+![IntegerCache]()
 
-同样，在Long，Byte，Short，我们也可以看到缓存，其缓存数据长度均是-128到127。
+初始化Integer后，IntegerCache会缓存[-128,127]之间的数据，这个区间的上限可以配置，取决于java.lang.Integer.IntegerCache.high这个属性，这个属性在VM参数里为-XX:AutoBoxCacheMax=2000进行设置调整或者VM里设置-Djava.lang.Integer.IntegerCache.high=2000。所以Integer在初始化完成后会缓存[-128,max]之间的数据。cache属于常量，存放在java的方法区中。
 
-https://www.jianshu.com/p/0ce2279c5691
-https://blog.csdn.net/LuoZheng4698729/article/details/53995925
+同样，在Long，Byte，Short，我们也可以看到缓存，其缓存数据长度均是-128到127。这里不做展开。
 
+**另外其他陷阱：**
+如：
+
+```
+
+System.out.println(Integer.valueOf(null));
+
+```
+
+Integer对象的值可以为null，所以编译器检查时不会出现检查时异常，但是在转换成int的时候就会抛出空指针异常。
 
 ## 4. 例题分析
 
 我们通过几个经典的问题，来看看大家到底理解了`装箱与拆箱`的知识点没。
 
-- new Integer(2) == 2?
-- new Integer(2) == new Integer(2) ? 
-- Integer.valueOf(2) == Integer.valueOf(2)?
-- Integer.valueOf(2).intValue() == 2？
-- new Integer(2).equals(new Integer(2))?
+- new Integer(5) == 5?
+- new Integer(5) == new Integer(5) ? 
+- Integer.valueOf(5) == Integer.valueOf(5)?
+- Integer.valueOf(5).intValue() == 5？
+- new Integer(5).equals(new Integer(5))?
 
-### 4.1 问题一：new Integer(2) == 2?
+### 4.1 问题一：new Integer(5) == 5?
 
-等号的左边是一个Object右边是一个数值，Object和数值怎么会相等的呢？
-
-答案：Java的编译器很聪明，它会自己去做装箱和拆箱的操作。这边它将new Integer(2)做的是Unboxing，它会里面的value取出来，这时候发现取出来的2等于右边，所以就为true。
+**答案：true。** 等号的左边是一个Object右边是一个数值，Object和数值怎么会相等的呢？Java的编译器很聪明，它会自己去做装箱和拆箱的操作。这边它将new Integer(5)做的是Unboxing，它会里面的value取出来，这时候发现取出来的5等于右边，所以就为true。
 
 
-### 4.2 问题二：new Integer(2) == new Integer(2) ? 
+### 4.2 问题二：new Integer(5) == new Integer(5) ? 
 
-之前说过。new Integer(2) 就是新建一个箱子，这个箱子的值就是2。 == 是判断这两个箱子是不是同一个箱子，不是说里面的值是不是一样.所以是false。因为他们不是同一个箱子。
+**答案：false。** new Integer(5) 就是新建一个箱子，这个箱子的值就是5。 == 是判断这两个箱子是不是同一个箱子，不是说里面的值是不是一样.所以是false。因为他们不是同一个箱子。
 
 
 
-### 4.3 问题三：Integer.valueOf(2) == Integer.valueOf(2)?
-
-Integer.valueOf() 是系统给我们分配的一个箱子，我们发现，每次调我们的箱子时候，系统都给了同一个箱子。这个我们的 Integer.valueOf(2) == Integer.valueOf(2)
-
-点进源码：
-
-在low和high之间，它会返回一个系统已经生产的cache，否则它会生产一个新的出来。看源码可以看到low = -128  high = 127
-
-我们不用2改用1000试一试。
+### 4.3 问题三：Integer.valueOf(5) == Integer.valueOf(5)?
 
 
+**答案: true。** Integer.valueOf(5)它会返回一个箱子给我们，箱子里面的值是5。但是在返回这个箱子给我们的时候，可能会新建一个新的箱子给我们，也可能会使用现有的一个箱子给我们。所以Integer.valueOf(5) == Integer.valueOf(5)。什么情况下才会相等呢？只有当系统已经将2这个箱子建立好了，并且缓存起来的情况下。会把箱子的引用同时发给等号的左边与右边。这样的情况，他们才会互相相等。Integer.valueOf() 是系统给我们分配的一个箱子，我们发现，每次调我们的箱子时候，系统都给了同一个箱子。这个我们的 Integer.valueOf(5) == Integer.valueOf(5)
 
-变为了false.说明系统对小的数字会使用系统分配的箱子，对于大的数字，系统会重新new一个箱子。
+**但是：** 可能为false。我们在上面介绍过，在low和high之间，它会返回一个系统已经生产的cache，否则它会生产一个新的出来。看源码可以看到low = -128  high = 127。所以当它的值超过了区间后，它就会返回新的箱子，所以就会为false。
+
+我们不用5改用200试一试。
+
+```
+Integer.valueOf(200) == Integer.valueOf(200)
+
+```
+
+**答案：false。** 说明系统对小的数字会使用系统分配的箱子，对于大的数字，系统会重新new一个箱子。面试的时候，可以回答，他们可能相等，也可能不相等。是有系统决定的。
+
+### 4.4 问题四：Integer.valueOf(5).intValue() == 5？
+
+**答案： true。**  intValue()做了一个拆箱的操作，将里面的值5取出来，值5等于5，所以是true。
 
 
+### 4.5 问题五：new Integer(5).equals(new Integer(5))?
 
-面试的时候，可以回答，他们可能相等，也可能不相等。是有系统决定的。
+**答案：true。** 这里我们没有用==而是用equals，equals判断相等是判断里面的值是不是相等，而不是判断这个箱子是不是同一个，所以我们的答案是true。我们来看看equals的源码。判断里面的值是不是相等。
 
-
-
-### 4.4 问题四：Integer.valueOf(2).intValue() == 2？
-
-intValue()做了一个拆箱的操作，将里面的值2取出来，值2等于2，所以是true。
+![equals]()
 
 
-### 4.5 问题五：new Integer(2).equals(new Integer(2))?
+### 打印结果：
 
-这里我们没有用==而是用equals，equals判断相等是判断里面的值是不是相等，而不是判断这个箱子是不是同一个，所以我们的答案是true。我们来看看equals的源码。判断里面的值是不是相等。
+![打印结果]()
 
 ## 文末
 
-本章节主要简单介绍了xxx 的相关知识，后续我们将会继续xxx。
+本章节主要简单介绍了`自动装箱与拆箱`的相关知识，希望对大家有所帮助~
+今后我会在每张文章开头增加 **每章一点正能量** ，文末增加5个编程相关的**英语单词** 学点英语。希望大家和我一样每天都能积极向上，一起学习一同进步！
+
+### 学点英语
+
+- AWT(Abstract Window Toolkit)抽象窗口工具  
+- API(Application Programming Interface)应用程序接口 
+- AOP  Aspect Oriented Programming（面向切面编程），可以 通过预编译方式和运行期动态代理实现在不修改源代码的情况下给程序动态统一 添加功能的一种技术。  
+- BMP  Bean-Managed Persistent（Bean管理的持久性），EJB中由 Bean自己负责持久性管理的方法，Bean的内容的同步（保存）需要自己编写代码 实现。 
+- I18N  internationalization（国际化），这个单词的长度是20，然后取 其首尾字母，中间省略的字母刚好18个。 
+
 
 >欢迎关注公众号：**Coder编程**
 获取最新原创技术文章和相关免费学习资料，随时随地学习技术知识！
@@ -230,31 +249,15 @@ https://blog.csdn.net/jairuschan/article/details/7513045
 
 https://www.cnblogs.com/dolphin0520/p/3780005.html
 
-https://blog.csdn.net/fanxiaobin577328725/article/details/52431508
 
-https://www.jb51.net/article/123726.htm
-
-https://www.cnblogs.com/jaysir/p/5399086.html
 
 
 ![微信公众号](https://user-gold-cdn.xitu.io/2019/4/16/16a26835c75c12fc?w=300&h=390&f=png&s=18217)
 
 ## 推荐阅读
 
-xxxxx
+[一篇带你读懂TCP之“滑动窗口”协议 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483706&idx=1&sn=8eed9d160013bd8ed6203ad511711553&chksm=96e67029a191f93fdd1543af2bf06025397d9c3bd0f0692c7fe247ab9c139cd869d69ab05498&token=1104592742&lang=zh_CN#rd)
 
-xxxxx
+[带你了解数据库中JOIN的用法 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483713&idx=1&sn=d61ad0aed42dc36d64d17732db352288&chksm=96e67052a191f9445bbe3d5825ce547ad3171c3874b571a93b97977d0668413e37a164c3e0bc&token=1144933717&lang=zh_CN#rd)
 
-xxxxx
-
-
-
-
-
-前两个之前介绍过，那么Integer.valueOf(2)是什么意思呢？
-
-它会返回一个箱子给我们，箱子里面的值是2。但是在返回这个箱子给我们的时候，可能会新建一个新的箱子给我们，也可能会使用现有的一个箱子给我们。
-
-所以Integer.valueOf(2) == Integer.valueOf(2)。什么情况下才会相等呢？只有当系统已经将2这个箱子建立好了，并且缓存起来的情况下。会把箱子的引用同时发给等号的左边与右边。这样的情况，他们才会互相相等。
-
-接下来，我们在编译器上看看上面问题的结果。
+[ 带你了解数据库中group by的用法 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483717&idx=1&sn=157a8a021c29043a10480d0294b39ca0&chksm=96e67056a191f940668812ebb092fe9984b22eb619a18339cc052e1051c659a7e9d907c48814&token=1144933717&lang=zh_CN#rd)
