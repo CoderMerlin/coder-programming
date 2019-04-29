@@ -1,15 +1,13 @@
 
-![图片](xxxx.png)
+
+![关注我](https://img-blog.csdnimg.cn/20190426221838971.gif)
+![从“数学归纳法”到理解“递归算法”！](https://img-blog.csdnimg.cn/20190429222831363.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pY2hhZWxfSE0=,size_16,color_FFFFFF,t_70)
+
+>每章一点正能量：人的一生可能燃烧也可能腐朽。
 ## 前言
-在上一个章节xxx,本章节接下来将主要介绍xxxx的相关知识。如有错误还请大家及时指出~ 
+相信大家在面试或者工作中偶尔会遇到递归算法的提问或者编程，我们今天来聊一聊`从数学归纳法到理解递归算法`。如有错误还请大家及时指出~ 
 
 >本文已同步至 [GitHub](https://github.com/CoderMerlin/coder-programming)/[Gitee](https://gitee.com/573059382/coder-programming)/公众号，感兴趣的同学帮忙点波关注~
-
-问题：
-
-- xxxxx？
-- xxxxx？
-
 
 ## 1. 数学归纳法
 
@@ -17,9 +15,9 @@
 
 > **来源百度百科**
 
-数学归纳法（Mathematical Induction, MI）是一种数学证明方法，通常被用于证明某个给定命题在整个（或者局部）自然数范围内成立。除了自然数以外，广义上的数学归纳法也可以用于证明一般良基结构，例如：集合论中的树。这种广义的数学归纳法应用于数学逻辑和计算机科学领域，称作结构归纳法。在数论中，数学归纳法是以一种不同的方式来证明任意一个给定的情形都是正确的（第一个,第二个，第三个，一直下去概不例外）的数学定理。虽然数学归纳法名字中有“归纳”，但是数学归纳法并非不严谨的归纳推理法，它属于完全严谨的演绎推理法。事实上，所有数学证明都是演绎法。
+**数学归纳法**（Mathematical Induction, MI）是一种数学证明方法，通常被用于证明某个给定命题在整个（或者局部）自然数范围内成立。除了自然数以外，广义上的数学归纳法也可以用于证明一般良基结构，例如：集合论中的树。这种广义的数学归纳法应用于数学逻辑和计算机科学领域，称作结构归纳法。在数论中，数学归纳法是以一种不同的方式来证明任意一个给定的情形都是正确的（第一个,第二个，第三个，一直下去概不例外）的数学定理。虽然数学归纳法名字中有“归纳”，但是数学归纳法并非不严谨的归纳推理法，它属于完全严谨的演绎推理法。事实上，所有数学证明都是演绎法。
 
-自然数是指表示物体个数的数，即由0开始，0，1，2，3，4，……一个接一个，组成一个无穷的集体，即指非负整数。
+**自然数**是指表示物体个数的数，即由0开始，0，1，2，3，4，……一个接一个，组成一个无穷的集体，即指非负整数。
 
 ### 1.2 推演步骤
 
@@ -73,7 +71,7 @@
 ```
 
 1+2+3+...+(n-1) = (n-1)n/2
-    
+    
 ```
 
 
@@ -85,7 +83,7 @@
 ```
 
  1+2+3...+(n-1)+n = (n-1)n/2+n 
-    
+    
 ```
 
 化简右边得：`n(n+1)/2`，那么我们最后证明的结果就是成立的！
@@ -114,10 +112,10 @@
 
 满足条件：
 
-- 1. 严格定义递归函数作用，包括参数，返回值，其他变量。
-- 2. 先一般情况，后特殊情况。
-- 3. 有退出条件。在一般情况下，能让递归正常退出的条件。
-- 4. 每次调用必须缩小问题规模，且新问题与原问题有着相同的形式，即规律。
+1. 严格定义递归函数作用，包括参数，返回值，其他变量。
+2. 先一般情况，后特殊情况。
+3. 有退出条件。在一般情况下，能让递归正常退出的条件。
+4. 每次调用必须缩小问题规模，且新问题与原问题有着相同的形式，即规律。
 
 上面的条件一环扣一环，也可以缩减成两个主要条件：`有规律`,`有退出条件`。我们以上面的条件，来结合案例进行理解。
 
@@ -268,7 +266,7 @@ System.out.println("公众号：Coder编程：3的阶乘:" + factorial(3));
 
 `斐波那契数列` 我想大家同样熟悉了解，下面我们继续回顾一下斐波那契数列到底是什么？
 
-![斐波那契数列图]()
+![斐波那契数列图](https://img-blog.csdnimg.cn/2019042922114129.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pY2hhZWxfSE0=,size_16,color_FFFFFF,t_70)
 
 斐波那契数列: 1、1、2、3、5、8、13、21.....
 
@@ -300,26 +298,26 @@ System.out.println("公众号：Coder编程：斐波那契数列:" + fib(3));
 
 操作规则：每次只能移动一个盘子，并且在移动过程中三根杆上都始终保持大盘在下，小盘在上，操作过程中盘子可以置于A、B、C任一杆上。
 
-![汉诺塔图]()
+![汉诺塔图](https://img-blog.csdnimg.cn/20190429221124496.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pY2hhZWxfSE0=,size_16,color_FFFFFF,t_70)
 
 在总结规律和写代码之前，我们先来玩几把简单的（**先一般后特殊**）：
 
 > 注：我们以数字的大小作为盘子的大小。
 
-- 1. 一个盘子的情况：
+1. 一个盘子的情况：
 
     1.1 将A柱子的1号盘子直接移动到C柱子中。
     1.2 结束。
 
 
-- 2. 两个盘子的情况：
+2. 两个盘子的情况：
 
     2.1 将A柱子的1号盘子移动到B柱子。
     2.2 将A柱子的2号盘子移动到C柱子。
     2.3 将B柱子的1号盘子移动到C柱子。
     2.4 结束。
     
-- 3. 三个盘子的情况：
+3. 三个盘子的情况：
 
     3.1 将A柱子的1号盘子移动到C柱子。
     3.2 将A柱子的2号盘子移动到B柱子。
@@ -359,48 +357,70 @@ System.out.println("公众号：Coder编程：斐波那契数列:" + fib(3));
 
 ```
 
+move(3,"A","B","C");
+
 /**
  * 汉诺塔问题
  * @param dish 盘子个数(也表示名称)
- * @param from 初始塔座
- * @param temp 中介塔座
- * @param to   目标塔座
+ * @param from 初始柱子
+ * @param temp 中介柱子
+ * @param to   目标柱子
  */
 public static void move(int dish,String from,String temp,String to){
     if(dish == 1){
-        System.out.println("将盘子"+dish+"从塔座"+from+"移动到目标塔座"+to);
+        System.out.println("将盘子"+dish+"从柱子"+from+"移动到目标柱子"+to);
     }else{
-        move(dish-1,from,to,temp);//A为初始塔座，B为目标塔座，C为中介塔座
-        System.out.println("将盘子"+dish+"从塔座"+from+"移动到目标塔座"+to);
-        move(dish-1,temp,from,to);//B为初始塔座，C为目标塔座，A为中介塔座
+        move(dish-1,from,to,temp);//A为初始柱子，B为目标柱子，C为中介柱子
+        System.out.println("将盘子"+dish+"从柱子"+from+"移动到目标柱子"+to);
+        move(dish-1,temp,from,to);//B为初始柱子，C为目标柱子，A为中介柱子
     }
 }
 
 ```
 
+- move(dish-1,from,to,temp);//A为初始柱子，B为目标柱子，C为中介柱子
+这里需要将n-1之前的盘子都放到B柱子上，最后第n个盘子放到C柱子。
 
+- move(dish-1,temp,from,to);//B为初始柱子，C为目标柱子，A为中介柱子
+这时候B变为了初始柱子，A成为了目标柱子。将之前n-1个盘子放到C目标柱子中。
 
+打印结果：
+
+![打印结果](https://img-blog.csdnimg.cn/20190429221104489.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01pY2hhZWxfSE0=,size_16,color_FFFFFF,t_70)
 
 ## 文末
 
-本章节主要简单介绍了xxx 的相关知识，后续我们将会继续xxx。
+本章节主要简单介绍了数学归纳法与递归算法的一些思想。希望对大家有所帮助！
+今后我会在每张文章开头增加 **每章一点正能量** ，文末增加5个编程相关的英语单词 **学点英语**。希望大家和我一样每天都能积极向上，一起学习一同进步！
+
+### 学点英语
+
+- JRE  Java Runtime Environment（Java运行环境），运行 JAVA程序所必须的环境的集合，包含JVM标准实现及Java核心类库。  
+- JSDK  Java Software Development Kit，和JDK以及J2SE 等同。  
+- JDK  Java Development Kit(Java开发工具包):包括运行环境 、编译工具及其它工具、源代码等，基本上和J2SE等同。  
+- J2ME  Java 2 Micro Edition（JAVA2精简版）API规格基 于J2SE ，但是被修改为可以适合某种产品的单一要求。J2ME使JAVA程序可以很方便的应用于电话卡、寻呼机等小型设备，它包括两种类型的组件，即配置 （configuration）和描述（profile）。 
+
 
 >欢迎关注公众号：**Coder编程**
 获取最新原创技术文章和相关免费学习资料，随时随地学习技术知识！
 
+
+
 参考文章：
 
-xxxxx
+https://www.cnblogs.com/ysocean/p/8005694.html
 
-xxxxx
+http://www.nowamagic.net/librarys/veda/detail/2314
 
-
-![微信公众号](https://user-gold-cdn.xitu.io/2019/4/16/16a26835c75c12fc?w=300&h=390&f=png&s=18217)
+![微信公众号](https://img-blog.csdnimg.cn/20190426221806703.jpg)
 
 ## 推荐阅读
 
-xxxxx
 
-xxxxx
+[一篇带你读懂TCP之“滑动窗口”协议 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483706&idx=1&sn=8eed9d160013bd8ed6203ad511711553&chksm=96e67029a191f93fdd1543af2bf06025397d9c3bd0f0692c7fe247ab9c139cd869d69ab05498&token=1104592742&lang=zh_CN#rd)
 
-xxxxx
+[带你了解数据库中JOIN的用法 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483713&idx=1&sn=d61ad0aed42dc36d64d17732db352288&chksm=96e67052a191f9445bbe3d5825ce547ad3171c3874b571a93b97977d0668413e37a164c3e0bc&token=1144933717&lang=zh_CN#rd)
+
+[ 深入浅出了解“装箱与拆箱” ](http://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=100000124&idx=1&sn=3e6cda3aef95f2dd609dd96963094da6&chksm=16e6706f2191f97972ca1b674034d0fb55026521d1418d1c069f1367b5ada38455ed2f4e2fcf#rd)
+
+![求关注](https://img-blog.csdnimg.cn/20190429222933150.gif)
