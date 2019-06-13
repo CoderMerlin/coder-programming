@@ -135,7 +135,7 @@
 
 | :computer:OCP项目实战 |
 | :------:|
-| [OCP项目实战](src/other.md) | 
+| [OCP项目实战](src/17-other/README.md) | 
 
 
 ## :mega: 13.运维 ##
@@ -178,7 +178,7 @@
 
 | :bell:Web安全|:bell:管理知识 | 
 | :------:| :------:| 
-| [Web安全](src/other.md) | [PMP第六版教程](src/other.md) | 
+| [Web安全](src/other.md) | [PMP第六版教程](src/17-other/README.md) | 
 
 # :mega: 最后： #
 
