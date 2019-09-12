@@ -15,3 +15,20 @@
 - [通过“表白”，让我们快速了解网络七层协议](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483701&idx=1&sn=b21d65f8ba4ae7f861a6e6175be2303c&chksm=96e67026a191f930c540a8c823c6ad5355dc4cb92824eadc9485aa195167768560dc506af358&token=948950272&lang=zh_CN#rd)
 
 - [一篇带你读懂TCP之“滑动窗口”协议 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483706&idx=1&sn=8eed9d160013bd8ed6203ad511711553&chksm=96e67029a191f93fdd1543af2bf06025397d9c3bd0f0692c7fe247ab9c139cd869d69ab05498&token=948950272&lang=zh_CN#rd)
+
+
+---
+
+> notebook: 数据库面试题 
+
+- [带你了解数据库中JOIN的用法](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483713&idx=1&sn=d61ad0aed42dc36d64d17732db352288&chksm=96e67052a191f9445bbe3d5825ce547ad3171c3874b571a93b97977d0668413e37a164c3e0bc&token=948950272&lang=zh_CN#rd)
+
+- [带你了解数据库中group by的用法](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483717&idx=1&sn=157a8a021c29043a10480d0294b39ca0&chksm=96e67056a191f940668812ebb092fe9984b22eb619a18339cc052e1051c659a7e9d907c48814&token=948950272&lang=zh_CN#rd)
+
+- [带你了解数据库中事务的ACID特性](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483722&idx=1&sn=e8bc8bd82c559e0cfe7f35cf46100af3&chksm=96e67059a191f94fe8948e5b5e4ef177b77fa7707d86d945b153f67e7f2e76b83ed0c768ef27&token=948950272&lang=zh_CN#rd)
+
+- [5分钟带你读懂事务隔离性与隔离级别 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483728&idx=1&sn=cdc5dc4708e48051e56b8e7d2a9fe5a8&chksm=96e67043a191f955b93e7228b88572beb486e6fac3308a1b69f5ee83c9e9ced6957e30b12d58&token=948950272&lang=zh_CN#rd)
+
+- [面试必备的数据库悲观锁与乐观锁](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483733&idx=1&sn=1f066b1446a0a132af8648481063c021&chksm=96e67046a191f9508a133f6c37f2420140b6ca092eaf39012e6fbfa86874fbb57edef6d66b4e&token=948950272&lang=zh_CN#rd)
+
+
