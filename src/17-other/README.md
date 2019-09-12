@@ -38,16 +38,16 @@
 - [PMP备考指南之第九章：项目资源管理](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483824&idx=1&sn=cf5a0b481554d1b9a4c0497062f662b9&chksm=96e670a3a191f9b560ab2a6e18525fd3c68ddc776cacbb1df637b414115ee8825898146056ee&token=267633840&lang=zh_CN#rd) 
 
 
-- [PMP备考指南之第十章：项目沟通管理]() 
+- [PMP备考指南之第十章：项目沟通管理](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483828&idx=1&sn=af8b7b6f8858029abf56c05b1f95cf21&chksm=96e670a7a191f9b1c6732c0ba981bcda6d9f5afc50b9ee074725b935a5dc0982c0d4143d37a9&token=948950272&lang=zh_CN#rd) 
 
 
-- [PMP备考指南之第十一章：项目风险管理]() 
+- [PMP备考指南之第十一章：项目风险管理](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483833&idx=1&sn=c3ea00b633e28bc3e27d2eb7bbfa3e68&chksm=96e670aaa191f9bc9c5f5eda6d2318adada8c7c0a85fe7fa98ad869b22413441af56846192ca&token=948950272&lang=zh_CN#rd) 
 
 
-- [PMP备考指南之第十二章：项目采购管理]() 
+- [PMP备考指南之第十二章：项目采购管理](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483840&idx=1&sn=f9c6f2025d3ee9acc5e542e6aacf5290&chksm=96e670d3a191f9c5c57dbdbc2ff9ef77631769ea6d283a53fad8ab2a1e9e20e7ba40af0c3e43&token=948950272&lang=zh_CN#rd) 
 
 
-- [PMP备考指南之第十三章：项目干系人管理]() 
+- [PMP备考指南之第十三章：项目干系人管理](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483841&idx=1&sn=d06aa1363f57416363ddd5185e87f74f&chksm=96e670d2a191f9c4b3ec7ede6f16d11c779de1f40a931acb7a8c2284379d905c18539e183d78&token=948950272&lang=zh_CN#rd) 
 
 
 
