@@ -16,7 +16,7 @@
 
 ![公众号](https://oscimg.oschina.net/oscnet/12fe7873f956cdb992a3df19db0c84bf6f7.jpg)
 
-## :mega: 1.面试题 ##
+## :mega: 1.面试题and笔试题 ##
 
 > JAVA相关面试题，祝各位找到好工作！
 
@@ -27,6 +27,10 @@
 | :notebook:SpringMVC面试题 | :notebook:SpringBoot面试题 |:notebook:SpringCloud面试题 |:notebook:Redis面试题 |:notebook:设计模式面试题 |
 | :------:| :------: | :------: | :------: |:------: |
 | [SpringMVC面试题](src/01-java-interview/README.md)| [SpringBoot面试题](src/01-java-interview/README.md) | [SpringCloud面试题](src/01-java-interview/README.md) | [Redis面试题](src/01-java-interview/README.md) | [设计模式面试题](src/01-java-interview/README.md) | 
+
+| :notebook:JAVA基础笔试题 |
+| :------:| 
+| [JAVA基础笔试题](src/01-java-interview/04-java-base-written/README.md)|
 
 ## :mega: 2.数据结构与算法 ##
 
