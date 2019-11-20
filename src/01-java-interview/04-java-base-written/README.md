@@ -46,6 +46,7 @@
 
 *[Java基础笔试练习（十八） ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484011&idx=2&sn=ea90f411c13dda58394e3980f24d093f&chksm=96e67378a191fa6ec5af3fa304b579c7e6e2b5789e9ed94f2040def0b84907a162dd5896f596&token=1208401862&lang=zh_CN#rd)
 
+* [Java基础笔试练习（十九） ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484040&idx=2&sn=1570b536fab0558e3136fa4c6766d9e7&chksm=96e6739ba191fa8da5cc46add6934cf308f24c5801fa375e076c9232cce86aef619a4f1e9523&token=793972075&lang=zh_CN#rd)
 
 
 
