@@ -3,18 +3,23 @@
 > 文章为导航页面，记录一些编程开发中的一些相关知识，希望能与大家一起进步!
 ## :mega: 我的相关文章会发表在以下博客或论坛 ##
 
-[微信公众号](https://mp.weixin.qq.com/mp/homepage?__biz=MzIwMTg3NzYyOA==&hid=2&sn=4c7bbd235237a61319b952a1735c5366)
-[掘金](https://juejin.im/user/5c8863a9e51d45346459983c/posts)
-[简书](https://www.jianshu.com/u/4314597216ea)
-[知乎](https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64)
-[博客园](https://www.cnblogs.com/coder-programming/)
-[开源中国](https://my.oschina.net/u/4096176)
-[今日头条](https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050)
-[SegmentFault](https://segmentfault.com/u/520coder)
-[51CTO](https://blog.51cto.com/14309541)
-[开发者头条](https://toutiao.io/u/527654)
 
-![公众号](https://oscimg.oschina.net/oscnet/12fe7873f956cdb992a3df19db0c84bf6f7.jpg)
+<p align="center">
+  <a href="#公众号"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
+  <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-Coder%E7%BC%96%E7%A8%8B-lightgrey.svg" alt="公众号"></a>
+  <a href="https://juejin.im/user/5c8863a9e51d45346459983c/posts"><img src="https://img.shields.io/badge/juejin-掘金-blue.svg" alt="掘金"></a>
+  <a href="https://blog.csdn.net/Michael_HM"><img src="https://img.shields.io/badge/csdn-CSDN-red.svg" alt="投稿"></a>
+  <a href="https://www.cnblogs.com/coder-programming/"><img src="https://img.shields.io/badge/cnblogs-博客园-important.svg" alt="投稿"></a>
+  <a href="https://my.oschina.net/u/4096176"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="投稿"></a>
+  <a href="https://www.jianshu.com/u/4314597216ea"><img src="https://img.shields.io/badge/jianshu-简书-critical" alt="投稿"></a>
+  <a href="https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="投稿"></a>
+  <a href="https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050"><img src="https://img.shields.io/badge/toutiao-头条-important.svg" alt="投稿"></a>
+  <a href="https://toutiao.io/u/527654"><img src="https://img.shields.io/badge/开发者头条-critical" alt="投稿"></a>
+  <a href="https://segmentfault.com/u/520coder"><img src="https://img.shields.io/badge/SegmentFault-informational" alt="投稿"></a>
+</p>
+
+
+
 
 ## :mega: 1.面试题and笔试题 ##
 
@@ -184,7 +189,13 @@
 | :------:| :------:| 
 | [Web安全](src/other.md) | [PMP第六版教程](src/17-other/README.md) | 
 
+## 公众号
+
+![公众号](https://oscimg.oschina.net/oscnet/12fe7873f956cdb992a3df19db0c84bf6f7.jpg)
+
+
 # :mega: 最后： #
+
 
 > 如果觉得还不错，能够帮得到你的话！
 > 帮忙点赞并Start ~
