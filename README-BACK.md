@@ -37,6 +37,14 @@
 | :------:| 
 | [JAVA基础笔试题](src/01-java-interview/04-java-base-written/README.md)|
 
+## :mega: 2.数据结构与算法 ##
+
+> 搜索/排序/高级算法/大数据算法/其他算法文章。搞定数据结构与算法，逼格分分钟提升！
+
+| :beer:搜索 | :beer:基础排序 | :beer:高级算法 | :beer:大数据算法 |:beer:其他算法 |
+| :------:| :------: | :------: | :------: |:------: |
+| [基础搜索](src/02-data-structure-and-algorithm/other.md)| [基础排序](src/02-data-structure-and-algorithm/other.md) | [高级算法](src/02-data-structure-and-algorithm/other.md) | [大数据算法](src/02-data-structure-and-algorithm/other.md) | [其他算法](src/02-data-structure-and-algorithm/other.md) | 
+
 
 ## :coffee: 3.Java基础 ##
 
