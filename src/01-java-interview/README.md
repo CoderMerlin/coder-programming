@@ -17,6 +17,13 @@
 - [一篇带你读懂TCP之“滑动窗口”协议 ](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247483706&idx=1&sn=8eed9d160013bd8ed6203ad511711553&chksm=96e67029a191f93fdd1543af2bf06025397d9c3bd0f0692c7fe247ab9c139cd869d69ab05498&token=948950272&lang=zh_CN#rd)
 
 
+> notebook: JAVA网络安全面试题
+
+- [[Java网络系列面试题]常见web攻击有哪些？](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484207&idx=1&sn=72bc31c8b141013fdb3ba4cf77c20326&chksm=96e6723ca191fb2a5f17a9918b006b6b3d4341d166c4aaf497ad2d7bcff2d4ef03b4e40bd4dd&token=1394220820&lang=zh_CN#rd)
+ 
+- [[Java网络安全系列面试题] GET 和 POST 的区别在哪里？](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484212&idx=1&sn=ea30e28ab5ce9565cdf8b4ca7c273001&chksm=96e67227a191fb31e5886c71d1ec88315c0a526d648a998aabb5f1f4111c448f8d780270221c&token=1170466385&lang=zh_CN#rd)
+ 
+- [[Java网络安全系列面试题] HTTP和HTTPS协议区别和联系都有哪些？](https://mp.weixin.qq.com/s?__biz=MzIwMTg3NzYyOA==&mid=2247484216&idx=1&sn=09a1bad01e2286429a9518bd8f09c3cd&chksm=96e6722ba191fb3daec4925c5b71cc1e958109a626e3609d558dfa945735dcdecc373f8c0d3a&token=1458694075&lang=zh_CN#rd)
 
 ---
 
