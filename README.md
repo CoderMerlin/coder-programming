@@ -8,14 +8,14 @@
   <a href="#公众号"><img src="https://img.shields.io/badge/weChat-微信群-blue.svg" alt="微信群"></a>
   <a href="#公众号"><img src="https://img.shields.io/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-Coder%E7%BC%96%E7%A8%8B-lightgrey.svg" alt="公众号"></a>
   <a href="https://juejin.im/user/5c8863a9e51d45346459983c/posts"><img src="https://img.shields.io/badge/juejin-掘金-blue.svg" alt="掘金"></a>
-  <a href="https://blog.csdn.net/Michael_HM"><img src="https://img.shields.io/badge/csdn-CSDN-red.svg" alt="投稿"></a>
-  <a href="https://www.cnblogs.com/coder-programming/"><img src="https://img.shields.io/badge/cnblogs-博客园-important.svg" alt="投稿"></a>
-  <a href="https://my.oschina.net/u/4096176"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="投稿"></a>
-  <a href="https://www.jianshu.com/u/4314597216ea"><img src="https://img.shields.io/badge/jianshu-简书-critical" alt="投稿"></a>
-  <a href="https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="投稿"></a>
-  <a href="https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050"><img src="https://img.shields.io/badge/toutiao-头条-important.svg" alt="投稿"></a>
-  <a href="https://toutiao.io/u/527654"><img src="https://img.shields.io/badge/开发者头条-critical" alt="投稿"></a>
-  <a href="https://segmentfault.com/u/520coder"><img src="https://img.shields.io/badge/SegmentFault-informational" alt="投稿"></a>
+  <a href="https://blog.csdn.net/Michael_HM"><img src="https://img.shields.io/badge/csdn-CSDN-red.svg" alt="CSDN"></a>
+  <a href="https://www.cnblogs.com/coder-programming/"><img src="https://img.shields.io/badge/cnblogs-博客园-important.svg" alt="博客园"></a>
+  <a href="https://my.oschina.net/u/4096176"><img src="https://img.shields.io/badge/oschina-开源中国-green" alt="开源中国"></a>
+  <a href="https://www.jianshu.com/u/4314597216ea"><img src="https://img.shields.io/badge/jianshu-简书-critical" alt="简书-"></a>
+  <a href="https://www.zhihu.com/people/mai-zhu-ru-guo-you-teng-64"><img src="https://img.shields.io/badge/zhihu-知乎-informational" alt="知乎"></a>
+  <a href="https://www.toutiao.com/c/user/52399840619/#mid=1571772641794050"><img src="https://img.shields.io/badge/toutiao-头条-important.svg" alt="头条"></a>
+  <a href="https://toutiao.io/u/527654"><img src="https://img.shields.io/badge/开发者头条-critical" alt="开发者头条"></a>
+  <a href="https://segmentfault.com/u/520coder"><img src="https://img.shields.io/badge/SegmentFault-informational" alt="segmentfault"></a>
 </p>
 
 
